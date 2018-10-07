@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trello app</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            font-family: sans-serif;
+            margin: 0px;
+            background-image: url(https://source.unsplash.com/1920x1080/?nature,water);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat
+        }
+
+        ul {
+            padding: 0px
+        }
+
+        li {
+            list-style: none;
+        }
+
+        input {
+            line-height: 20px;
+            border: none
+        }
+
+        input[readonly] {
+            background: transparent;
+            font-size: 16px;
+        }
+
+        .topBar {
+            font-size: 18px;
+            line-height: 50px;
+            padding: 0px 20px;
+            background: #120729;
+            height: 50px;
+            color: white;
+        }
+
+        .main {
+            padding: 0px 20px;
+        }
+
+        .link {
+            margin: 20px 0px;
+            cursor: pointer;
+            text-decoration: underline;
+            color: #120729;
+            font-size: 18px
+        }
+
+        .addButton {
+            cursor: pointer;
+            margin-top: 8px;
+            font-size: 14px;
+            color: #309648;
+        }
+
+        .deleteButton {
+            color: #d77373;
+            cursor: pointer;
+        }
+
+        .boardList__item-wrapper {
+            display: inline-block;
+            overflow: auto;
+            margin: 0px 15px 15px 0px;
+        }
+
+        .boardList__block {
+            background: #e9eaef;
+            width: 170px;
+            height: 55px;
+            padding: 10px;
+        }
+
+        .boardList__item {
+            display: block;
+            text-decoration: none;
+            color: #120729;
+        }
+
+        .boardList__addBoard-item {
+            color: #737373;
+        }
+
+        .columnList__item-wrapper {
+            list-style: none;
+            display: inline-block;
+            vertical-align: top;
+            overflow: auto;
+            width: 300px;
+            background: #e9eaef;
+            margin: 0px 15px 15px 0px;
+        }
+
+        .columnList__item {
+            color: #5d5d5d;
+            padding: 15px;
+            min-height: 80px;
+            overflow: auto
+        }
+
+        .columnList__addColumn-item {
+            color: #6a6a6a;
+            padding: 10px;
+        }
+
+        .column__name {
+            font-weight: 500;
+        }
+
+        .taskList {
+            overflow: scroll;
+            max-height: 340px;
+            margin-bottom: 15px;
+        }
+
+        .taskList__item-wrapper {
+            height: 42px;
+        }
+
+        .taskList__item {
+            background: white;
+            line-height: 35px;
+            padding: 0px 8px;
+            font-size: 12px;
+        }
+
+        .taskList__addTask-item {
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <router-view></router-view>
+</div>
+<script src="/build/app.js"></script>
+</body>
+</html>
